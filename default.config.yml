@@ -87,7 +87,7 @@ ssh_config: ~
 #ssh_config: |
 #  Host my_host
 #      HostName my_hostname
-#      User akollade
+#      User my_user
 #      Port 12345
 
 #########
@@ -97,7 +97,7 @@ ssh_config: ~
 git_user_name: X X
 git_user_email: x@exemple.fr
 
-git_aliases: 
+git_aliases:
   ci: commit
   st: status
   br: branch
