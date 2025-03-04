@@ -17,8 +17,8 @@ location ~ \.php$ {
         fastcgi_pass   127.0.0.1:{{ site_php_fpm_port }};
         fastcgi_split_path_info ^(.+\.php)(/.*)$;
         fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_buffer_size 4k;
-        fastcgi_buffers 256 4k;
+        fastcgi_buffer_size 512k;
+        fastcgi_buffers 16 512k;
         fastcgi_max_temp_file_size 0;
         fastcgi_read_timeout {{ nginx_php_max_execution_time }};
         fastcgi_intercept_errors on;
