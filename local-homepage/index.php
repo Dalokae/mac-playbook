@@ -36,7 +36,6 @@ foreach ($files as $file) {
             <li class="nav-item"><a class="nav-link" href="phpinfo.php" target="_blank">phpinfo()</a></li>
             <?php if(extension_loaded('xdebug')): ?><li class="nav-item"><a class="nav-link" href="xdebug-info.php" target="_blank">xdebug_info()</a></li><?php endif; ?>
             <li class="nav-item"><a class="nav-link" href="<?php echo $sites['mailpit']['url']; ?>" target="_blank">Mailpit</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo $sites['minio']['url']; ?>" target="_blank">Minio</a></li>
         </ul>
     </div>
     <div >
@@ -148,32 +147,6 @@ foreach ($files as $file) {
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col">
-            <div class="bg-white rounded box-shadow my-3 p-3 border">
-                <h2 class="text-center">Minio</h2>
-
-                <table class="table table-striped table-bordered">
-                    <tbody>
-                    <tr>
-                        <th class="w-50">Port</th>
-                        <td class="w-50"><?php echo $minioPort; ?></td>
-                    </tr>
-                    <tr>
-                        <th class="w-50">Access Key</th>
-                        <td class="w-50"><?php echo $minioAccessKey; ?></td>
-                    </tr>
-                    <tr>
-                        <th class="w-50">Secret Key</th>
-                        <td class="w-50"><?php echo $minioSecretKey; ?></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
