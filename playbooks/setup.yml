@@ -51,8 +51,6 @@
       tags: symfony_cli
     - role: drush
       tags: drush
-    - role: wp_cli
-      tags: wp_cli
     - role: nodejs
       tags: nodejs
     - role: nginx
