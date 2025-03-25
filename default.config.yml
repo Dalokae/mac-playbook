@@ -129,14 +129,11 @@ git_sequence_editor: ~
 # PHP   #
 #########
 
-php_default_version:  8.3
+php_default_version:  8.4
 
 php_versions:
-  - 7.4
-  - 8.0
-  - 8.1
-  - 8.2
   - 8.3
+  - 8.4
 
 php_all_versions:
   - 5.6
@@ -149,6 +146,7 @@ php_all_versions:
   - 8.1
   - 8.2
   - 8.3
+  - 8.4
 
 install_xdebug: true
 
@@ -162,8 +160,9 @@ php_extensions:
   - igbinary
   - imagick
 
-php_74_extensions: []
-php_80_extensions: []
+# See https://github.com/Imagick/imagick/issues/689, need to wait a new release of imagick
+php_84_extensions:
+  - igbinary
 
 # packages needed to build extensions
 php_extensions_dependencies:
