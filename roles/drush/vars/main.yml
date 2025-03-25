@@ -1,4 +1,0 @@
----
-
-drush8_url: https://github.com/drush-ops/drush/releases/download/8.4.11/drush.phar
-drush8_path: "{{ brew_prefix }}/bin/drush8"

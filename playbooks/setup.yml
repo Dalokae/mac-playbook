@@ -49,8 +49,6 @@
       tags: composer
     - role: symfony_cli
       tags: symfony_cli
-    - role: drush
-      tags: drush
     - role: nodejs
       tags: nodejs
     - role: nginx
