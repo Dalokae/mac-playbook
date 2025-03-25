@@ -55,8 +55,6 @@
       tags: nginx
     - role: mailpit
       tags: mailpit
-    - role: minio
-      tags: minio
     - role: logrotate
       tags: logrotate
     - upgrade
