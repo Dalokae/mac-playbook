@@ -1,3 +1,0 @@
----
-
-wp_cli_path: "{{ brew_prefix }}/bin/wp"
