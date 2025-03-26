@@ -105,7 +105,7 @@
     value: "{{ item }}.so"
     exclusive: false
   become: true
-  with_items: "{{ php_current_version_extensions }}"
+  with_items: "{{ lookup('vars', php_current_version_extensions, default=php_extensions) }}"
   notify: Restart PHP-FPM
 
 - name: "{{ php_current_version }} - Delete old custom config file"
