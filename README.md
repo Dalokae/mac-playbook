@@ -63,7 +63,7 @@ nginx_sites:
     server_name: wallabag.localhost
     type: symfony
     root: "~/dev/wallabag/web"
-    php_version: '8.0'
+    php_version: '8.3'
 ```
 
 Homebrew is needed, see https://brew.sh/ to install it.
